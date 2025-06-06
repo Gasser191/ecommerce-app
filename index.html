@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zewita's Ecommerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="assets/Uzamaki.png" alt="Zewita Logo" class="logo" />
+      <h1>Zewita's Ecommerce</h1>
+    </div>
+    <input type="text" id="search-input" placeholder="Search items..." />
+  </header>
+
+  <section id="filters">
+    <h3>Category</h3>
+    <label><input type="checkbox" value="books" class="category-filter" /> Books</label>
+    <label><input type="checkbox" value="electronics" class="category-filter" /> Electronics</label>
+    <label><input type="checkbox" value="clothing" class="category-filter" /> Clothing</label>
+    <label><input type="checkbox" value="home" class="category-filter" /> Home</label>
+    <label><input type="checkbox" value="accessories" class="category-filter" /> Accessories</label>
+    <label><input type="checkbox" value="toys" class="category-filter" /> Toys</label>
+
+    <h3>Price</h3>
+    <label><input type="checkbox" value="<50" class="price-filter" /> Under $50</label>
+    <label><input type="checkbox" value="50-100" class="price-filter" /> $50–$100</label>
+    <label><input type="checkbox" value=">100" class="price-filter" /> Over $100</label>
+  </section>
+
+  <main id="items-container"></main>
+
+  <aside id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <div id="cart-summary">
+      <p>Total Items: <span id="total-items">0</span></p>
+      <p>Total Price: $<span id="total-price">0.00</span></p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
